@@ -1,0 +1,480 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    margin: 0;
+  }
+  
+  #header {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+  }
+  .navbar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: #000000;
+      border-bottom: 1px solid #dfdfdf;
+      display: flex;
+      justify-content: center;
+      padding: 5px 0;
+    }
+    
+    .nav-wrapper{
+      width: 70%;
+      max-width: 1344px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .ins-img{
+      height: 100%;
+      margin-top: 7px;
+      margin-left: 425px;
+    }
+    
+    .search-box{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 25px;
+      background: rgb(11, 25, 53);
+      border: 1px solid #dfdfdf;
+      border-radius: 2px;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      text-transform: capitalize;
+      margin-top: 7px;
+      border-radius: 10px;
+    }
+    
+    .search-box::placeholder{
+      color: #ffffff;
+    }
+    
+    .nav-items{
+      height: 22px;
+      position: relative;
+      right: -200px;
+      top: 50%; /* Adjust top position as needed */
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+    }
+    .nav-items2{
+      padding-top: 30px;
+    }
+    .nav-items i{
+      padding-left: 30px;
+      color: #ffffff;
+    }
+    
+  
+  #container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 50px);
+  }
+  
+  #first {
+      flex: 1;
+      height: 100%;
+      background-color: black;
+      padding-top: 60px;
+      
+      position: fixed;
+      top: 0; /* Stick to the top of the viewport */
+      z-index: 100; 
+    
+  }
+  
+  
+    .nav-links a {
+      font-weight: 750;
+      color: #ffffff;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
+    
+    .current-page a { color: rgb(12, 13, 14);}
+    
+    .nav-links a:hover {
+      background: rgba(29, 161, 242, 0.1);
+      color: #065fe3;
+      padding: 10px 15px;
+      border-radius: 25px;
+    }
+    .nav-items {
+      margin: 1.2rem 2rem;
+      white-space: nowrap;
+    }
+    .nav-links i {
+      padding-right: 0.5rem;
+      
+    }
+    .nav-links {
+      margin-top: -1rem;
+      background: rgb(4, 4, 4);
+    }
+  
+  .main-text {
+      font-size: 15px;
+      font-weight: bold;
+      color: #ffffff
+    }
+    .content1{
+      padding-left: 30px;
+    }
+    .content{
+      height: 100%;
+      background-color:  rgb(11, 25, 53); /* Use your desired color for the android div */
+      color: white; /* Set text color to white, or any color that provides good contrast */
+      padding-left: 40px; /* Add padding for spacing */
+      /* Optional: Add rounded corners for a nicer look */
+      display: inline-block; /* Make the android div inline-block to center it within the snap div */
+      text-decoration: none;
+    }
+    .sub-text {
+      font-size: 13px;
+      color: rgb(101, 119, 134);
+    }
+    
+    .nav-list .trend-icon {
+      font-size: 13px;
+      color:  rgb(101, 119, 134);
+    }
+    /* ... existing styles ... */
+  
+  .trending-tags {
+      color: #065fe3; /* Blue color for the heading */
+      margin-top: 20px;
+      padding-top: 45px;
+      padding-left: 20px; /* Add top spacing */
+    }
+    
+    .trending-tags h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    
+    .trending-tags ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .trending-tags li {
+      display: flex; /* Use flex for better positioning */
+      align-items: center; /* Center items vertically */
+    }
+    
+    .trending-tags .icon {
+      margin-right: 10px; /* Add gap between icon and words */
+    }
+    
+    .trending-tags .word {
+      margin-right: 10px;
+      padding-left: 20px; /* Add gap between words and oval */
+    }
+    
+    .oval {
+      width: 20px;
+      height: 20px;
+      background-color: #065fe3; /* Blue color for the oval */
+      color: #fff;
+      text-align: center;
+      line-height: 20px;
+      border-radius: 50%;
+      padding-right: 50px;
+    }
+    /* ... existing styles ... */
+  
+  .social-media {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      position: relative;
+      bottom: -200px;
+      padding-left: 30px;
+    }
+    
+    .social-media i {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    
+    .social-media .twitter {
+      color: #1da1f2;
+    }
+    
+    .social-media .linkedin {
+      color: #0077b5;
+    }
+    
+    .social-media .instagram {
+      color: #e4405f;
+    }
+    
+    .social-media .discord {
+      color: #5865f2;
+    }
+    
+    .vue-tag {
+      margin-bottom: 80px; /* Add margin-bottom for distance below Vue */
+    }
+    
+  
+  #middle {
+    flex: 2;
+   border: none;
+    background-color: black;
+    padding-left: 250px;
+  }
+  
+  
+  #last {
+    flex: 1;
+    background-color: black;
+    border: none;
+  }
+  .second-nested-div h2{
+      color: #ffffff;
+      padding-left: 75px;
+  }
+  .snap {
+      background-color: black;
+      text-align: center; /* Center the content horizontally */
+      padding: 20px; /* Add padding for spacing */
+    }
+    .android {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      background-color: rgb(11, 25, 53);
+      color: white;
+      padding: 20px; /* Add padding for spacing */
+      border-radius: 10px;
+      text-decoration: none;
+    }
+    
+    .android a {
+      display: flex; /* Add this line to make the content center vertically */
+      align-items: center; /* Add this line to make the content center vertically */
+      padding-top: 30px;
+      margin: 0; /* Remove any default margin */
+    }
+    .android a:hover{
+      color: #000000;
+    }
+    
+    .android:hover {
+      background-color: #ffffff;
+    }
+    .icons{
+      padding-top: 20px;
+    }
+    .icons a{
+     
+      padding-left: 50px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    
+    .nav-list {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid rgb(230, 236, 240);
+    }
+    .nav-list:hover {
+      background: rgba(0, 0, 0, 0.03);
+      cursor: pointer;
+    }
+    .nav-list a {
+        color: rgb(27, 149, 224);
+    }
+    .nav-list:last-child {
+      font-size: 1rem;
+      border-bottom: none;
+    }
+    .trend-list {
+      display: flex;
+      flex-flow: column nowrap;
+      
+    }
+  
+    .nested-div {
+      margin: 0;
+      padding-top: 30px;
+      overflow-x: auto;
+      white-space: nowrap;
+      
+  }
+  
+  
+  .story-container {
+      padding-left: 50px;
+      
+    display: inline-block; 
+  }
+  
+  .post-content{
+      background-color: rgb(11, 25, 53);
+  }
+  .nested-div2{
+          background-color: rgb(11, 25, 53);
+  }
+  .post-container {
+          background-color: rgb(11, 25, 53);
+      max-width: 600px; /* Adjust the maximum width as needed */
+      margin: 20px auto; /* Center the container */
+      padding: 20px; /* Add padding to the container */
+      border: 1px solid #ccc; /* Add a border for better visibility */
+      border-radius: 10px; /* Add rounded corners if desired */
+    }
+    
+    .user-info {
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+    }
+  
+    
+    .user-photo {
+      margin-right: 15px;
+    }
+    
+    .user-photo img {
+      width: 50px; /* Adjust the width of the user photo */
+      height: 50px; /* Adjust the height of the user photo */
+      border-radius: 50%; /* Make the user photo round */
+      object-fit: cover;
+    }
+    
+    .user-details p {
+      margin: 0;
+      font-weight: bold;
+    }
+    
+    .release-info {
+      color: #ffffff;
+    }
+    
+    .caption p {
+      margin: 15px 0;
+      color: #ffffff;
+    }
+    
+    .post-photo img {
+      width: 100%; /* Make the post photo fill its container */
+      border-radius: 10px; /* Add rounded corners to the post photo */
+      object-fit: cover;
+    }
+    
+    .categories,
+    .tags {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    
+    .actions {
+      margin-top: 10px;
+      color: #ffffff;
+    }
+    
+    .actions i {
+      margin-right: 10px;
+    }
+    
+    /* Add any additional styling based on your requirements */
+    
+  
+  .status-wrapper {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(11, 25, 53);
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .status-card {
+    flex: 0 0 auto;
+    width: 80px;
+    max-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .username {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #fff;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+      #navItems {
+        display: none;
+        flex-direction: column; 
+      }
+    
+      .toggle-button {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        color: #ffffff;
+      }
+    
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      .toggle-button.active #navItems {
+          display: flex;
+      }
+    
+      .toggle-button.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+    
+      .toggle-button.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .toggle-button.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+    
